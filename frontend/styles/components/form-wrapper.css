@@ -1,0 +1,17 @@
+.form-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 340px;
+
+    padding-left: 30px;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+
+    border-radius: var(--formBorderRadius);
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.14);
+}

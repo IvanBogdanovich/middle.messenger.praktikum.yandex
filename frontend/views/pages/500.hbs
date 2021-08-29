@@ -1,0 +1,32 @@
+---
+meta:
+    description: Мы уже фиксим
+    title: 500
+
+styles: ./../../styles/pages/error.css
+
+link:
+    value: Назад к чатам
+    url: '/views/pages/chats.hbs'
+---
+
+{{#extend "common"}}
+{{#content "main"}}
+<main class="main">
+    <section class="grid">
+        <h1 hidden>Страница 500-ой ошибки</h1>
+
+        <div class="row row--align-items-center">
+            <div class="col col-xs-12">
+                <div class="error">
+                    <h2 class="error__title">500</h2>
+                    <p class="error__desc">Мы уже фиксим</p>
+                </div>
+
+                {{>link}}
+            </div>
+        </div>
+    </section>
+</main>
+{{/content}}
+{{/extend}}

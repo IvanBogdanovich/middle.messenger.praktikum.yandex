@@ -1,0 +1,36 @@
+.search {
+    position: relative;
+    margin-bottom: 14px;
+
+    width: 290px;
+    height: 32px;
+
+    color: var(--searchInputColor);
+}
+
+.search__input {
+    width: 100%;
+    height: 100%;
+    border: none;
+
+    border-radius: 5px;
+    background-color: var(--searchInputBg);
+    text-align: center;
+}
+
+.search__icon {
+    position: absolute;
+    top: 50%;
+    right: calc(50% + 30px);
+
+    transform: translate(50%, -50%);
+    opacity: 1;
+    visibility: visible;
+
+    transition: opacity var(--commonDuration), visibility var(--commonDuration);
+}
+
+.search__input:focus + .search__icon {
+    visibility: hidden;
+    opacity: 0;
+}

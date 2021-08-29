@@ -1,0 +1,79 @@
+---
+meta:
+    description: Ты это, заходи если что
+    title: Login
+
+styles: styles/index.css
+
+scripts: scripts/index.js
+
+legend:
+    legendText: Вход
+
+button:
+    ID: button-chat
+    text: Вход
+    type: button
+
+fields:
+- field:
+    label: Логин
+    ID: login
+    name: login
+    type: text
+    error: Неверный логин
+- field:
+    label: Пароль
+    ID: password
+    name: password
+    type: password
+    error: Неверный пароль
+
+link:
+    value: Нет аккаунта?
+    url: '/views/pages/registration.hbs'
+---
+
+{{#extend "common"}}
+{{#content "main"}}
+<main class="main">
+    <div hidden>
+        {{!-- TODO временно оставил ссылки на шаблоны что бы эти странички билдились --}}
+        <a href="/views/pages/chats.hbs"></a>
+        <a href="/views/pages/404.hbs"></a>
+        <a href="/views/pages/500.hbs"></a>
+    </div>
+
+    <section class="grid">
+        <h1 hidden>Страница входа</h1>
+
+        <div class="row row--align-items-center">
+            <div class="col col-xs-12">
+                <div class="form-wrapper">
+                    <form
+                        action="*"
+                        method="POST"
+                        id="login"
+                        class="form"
+                    >
+                        <fieldset class="form__fieldset">
+                            {{>legend}}
+
+                            <div>
+                                {{#each fields}}
+                                    {{>field}}
+                                {{/each}}
+                            </div>
+                        </fieldset>
+
+                        {{>button}}
+                    </form>
+
+                    {{>link}}
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{{/content}}
+{{/extend}}

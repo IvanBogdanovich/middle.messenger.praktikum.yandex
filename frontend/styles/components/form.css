@@ -1,0 +1,17 @@
+.form {
+    margin-bottom: 14px;
+}
+
+.form__fieldset {
+    position: relative;
+    margin-bottom: 150px;
+}
+
+.form__legend {
+    margin-bottom: 60px;
+
+    width: 100%;
+
+    text-align: center;
+    font-size: var(--large-xs);
+}

@@ -1,0 +1,29 @@
+{{#if companion}}
+    <a class="companion {{companion.className}}" href="{{companion.url}}">
+        <img src="{{companion.img.src}}" class="companion__img">
+        <div class="companion__info">
+            <h3 class="companion__name">{{companion.name}}</h3>
+
+            <div class="companion__messages">
+                {{#if companion.isMessageMy}}
+                    <p class="companion__my">Вы:</p>
+                {{/if}}
+
+                <p class="companion__message">{{companion.message}}</p>
+            </div>
+        </div>
+
+        <div class="companion__add">
+            <time
+                datetime="{{companion.time}}"
+                class="companion__time"
+            >
+                {{companion.time}}
+            </time>
+
+            {{#if companion.amountUnread}}
+                <span class="companion__amountUnread">{{companion.amountUnread}}</span>
+            {{/if}}
+        </div>
+    </a>
+{{/if}}

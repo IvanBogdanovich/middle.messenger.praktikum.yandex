@@ -1,0 +1,83 @@
+:root {
+    /* pallete */
+    --alpha: #1E1E1E;
+    --beta: #999999;
+    --gamma: #3369F3;
+    --delta: #FF2F2F;
+    --epsilon: #FFFFFF;
+    --dzeta: #EFEFEF;
+    --eta: #000000;
+    --teta: #EAEAEA;
+    --iota: #FBFBFB;
+    --kappa: #5C85ED;
+    --lambda: #1050F3;
+    --mu: #E4EDFD;
+    --nu: #CBDBF7;
+    --xi: rgb(0 0 0 / .4);
+    --psi: #FF0000;
+    --omega: #F05555;
+    --az: #A70000;
+
+    /* duration transition */
+    --commonDuration: 0.3s;
+
+    /* button */
+    --buttonText: var(--epsilon);
+    --buttonBg: var(--gamma);
+    --buttonBgHover: var(--kappa);
+    --buttonBgActive: var(--lambda);
+
+    /* field */
+    --fieldLabelColor: var(--beta);
+    --fieldBorderColor: var(--gamma);
+    --fieldErrorColor: var(--delta);
+    --fieldInputColor: var(--alpha);
+
+    /* link */
+    --linkColor: var(--gamma);
+    --linkColorHover: var(--kappa);
+    --linkColorActive: var(--lambda);
+    --linkColorRed: var(--psi);
+    --linkColorRedHover: var(--omega);
+    --linkColorRedActive: var(--az);
+
+    /* sidebar */
+    --sidebarBg: var(--iota);
+    --sidebarBorderColor: var(--teta);
+    --sidebarLinkWrapBg: var(--gamma);
+    --sidebarLinkWrapColor: var(--epsilon);
+    --sidebarLinkBgHover: var(--dzeta);
+
+    /* companion */
+    --companionHoverColor: var(--mu);
+    --companionActiveColor: var(--nu);
+    --companionBorderColor: var(--teta);
+    --companionMessageColor: var(--beta);
+    --companionTimeColor: var(--beta);
+    --companionUnreadMessagesBg: var(--gamma);
+    --companionUnreadMessagesColor: var(--epsilon);
+
+    /* search */
+    --searchInputColor: var(--beta);
+    --searchInputBg: var(--dzeta);
+
+    /* link-profile */
+    --linkProfileColor: var(--beta);
+    --linkProfileColorHover: var(--dzeta);
+
+    /* chats__title */
+    --chatsTitle: var(--beta);
+
+    /* file-upload */
+    --fileUploadLabelColor: var(--dzeta);
+    --fileUploadLabelHover: var(--eta);
+    --fileUploadLabelHoverText: var(--epsilon);
+
+    /* modal */
+    --modalBgOverlay: var(--xi);
+    --modalBg: var(--epsilon);
+
+    /* form_profile */
+    --formProfileListItemBorderColor: var(--teta);
+    --formProfileInputColor: var(--beta);
+}

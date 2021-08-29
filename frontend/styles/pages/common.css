@@ -1,0 +1,10 @@
+@import '../variables.css';
+@import '../sizes.css';
+@import '../z-index.css';
+@import '../normalize.css';
+@import '../document.css';
+
+/* сетка */
+@import '../components/grid/grid.css';
+@import '../components/grid/row.css';
+@import '../components/grid/col.css';

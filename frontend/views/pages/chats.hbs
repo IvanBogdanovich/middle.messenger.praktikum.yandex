@@ -1,0 +1,57 @@
+---
+meta:
+    description: Чаты
+    title: Chats
+
+styles: ./../../styles/pages/chats.css
+
+companions:
+    - companion:
+        url: '/'
+        img:
+            src: '../../images/default.jpg'
+        name: 'Андрей'
+        isMessageMy: true
+        message: Изображение
+        time: '10:49'
+        amountUnread: 2
+    - companion:
+        url: '/'
+        img:
+            src: '../../images/default.jpg'
+        name: 'Киноклуб'
+        isMessageMy: false
+        message: Изображение
+        time: '10:49'
+        amountUnread: 2
+---
+
+{{#extend "common"}}
+{{#content "main"}}
+<main class="main chats">
+    <section class="grid">
+        <h1 hidden>Страница чатов</h1>
+        <div class="row">
+            <div class="col col-xs-3">
+                <aside class="sidebar" id="sidebar">
+                    {{>link-profile}}
+                    {{>search}}
+
+                    <ul>
+                        {{#each companions}}
+                            <li class="sidebar__item">{{>companion}}</li>
+                        {{/each}}
+                    </ul>
+                </aside>
+            </div>
+
+            <div class="col col-xs-9">
+                <section class="chats__wrapper">
+                    <h2 class="chats__title">Выберите чат чтобы отправить сообщение</h2>
+                </section>
+            </div>
+        </div>
+    </section>
+</main>
+{{/content}}
+{{/extend}}

@@ -1,0 +1,34 @@
+.link-profile {
+    position: relative;
+    margin-bottom: 13px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5px;
+
+    height: 30px;
+
+    color: var(--linkProfileColor);
+    text-align: right;
+
+    font-size: var(--small-s);
+}
+
+.link-profile:hover {
+    background-color: var(--linkProfileColorHover);
+}
+
+.link-profile::before {
+    content: '';
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    display: block;
+    width: 120%;
+    height: 140%;
+
+    transform: translateX(-50%) translateY(-50%);
+}

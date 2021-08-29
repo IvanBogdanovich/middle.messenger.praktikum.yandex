@@ -1,0 +1,65 @@
+.field {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    height: 55px;
+}
+
+.field__label {
+    color: var(--fieldLabelColor);
+
+    font-size: var(--medium-xxxs);
+
+    transform: translateY(-20px);
+    transition: var(--commonDuration) transform, var(--commonDuration) font-size;
+}
+
+.field__input {
+    height: 40px;
+
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: var(--fieldBorderColor);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: transparent;
+
+    color: var(--fieldInputColor);
+
+    font-size: var(--medium-xxxs);
+}
+
+.field__input:valid + .field__label,
+.field__input:focus + .field__label  {
+    font-size: var(--small-xxs);
+
+    transform: translateY(-55px);
+}
+
+/* в хроме стили сломаются если объеденить с правилами выше, поэтому дублирование  */
+.field__input:autofill + .field__label {
+    transform: translateY(-55px);
+}
+
+.field:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.field__error {
+    position: absolute;
+    bottom: 0;
+
+    color: var(--fieldErrorColor);
+
+    font-size: var(--small-xxxs);
+}
+
+.field__error--is-none {
+    display: none;
+}
+
+.field__error--is-block {
+    display: block;
+}

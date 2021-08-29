@@ -1,0 +1,30 @@
+.col {
+    padding-left: 10px;
+    padding-right: 10px;
+
+    min-height: 1px;
+}
+
+.col-xs-1 {
+    width: calc((100% / 12) * 1);
+}
+
+.col-xs-3 {
+    width: calc((100% / 12) * 3);
+}
+
+.col-xs-6 {
+    width: calc((100% / 12) * 6);
+}
+
+.col-xs-9 {
+    width: calc((100% / 12) * 9);
+}
+
+.col-xs-11 {
+    width: calc((100% / 12) * 11);
+}
+
+.col-xs-12 {
+    width: calc((100% / 12) * 12);
+}

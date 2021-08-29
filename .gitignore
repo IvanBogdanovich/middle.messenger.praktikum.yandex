@@ -1,0 +1,6 @@
+dist
+.cache
+.git
+node_modules
+.github
+.DS_Store

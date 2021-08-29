@@ -1,0 +1,27 @@
+.button {
+    display: grid;
+    place-content: center;
+
+    width: 100%;
+    max-width: 280px;
+    height: 37px;
+    border: none;
+
+    border-radius: var(--commonBorderRadius);
+    color: var(--buttonText);
+    background-color: var(--buttonBg);
+    cursor: pointer;
+
+    font-size: var(--medium-xxxs);
+
+    transition: var(--commonDuration) background-color;
+}
+
+.button:hover {
+    background-color: var(--buttonBgHover);
+}
+
+.button:active,
+.button:focus {
+    background-color: var(--buttonBgActive);
+}

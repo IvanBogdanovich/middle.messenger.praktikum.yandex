@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+{{#block "head"}}
+    <head>
+        {{#block "meta"}}
+            {{> meta}}
+        {{/block}}
+
+        {{#if styles}}
+            <link href="{{styles}}" rel="stylesheet" />
+        {{/if}}
+
+        <link rel="icon" href="/images/favicon.png" type="image/png" sizes="32x32">
+    </head>
+{{/block}}
+
+{{#block "body"}}
+    <body>
+
+        {{#block "main"}}{{/block}}
+
+        {{#if scripts}}
+            <script src="{{scripts}}"></script>
+        {{/if}}
+    </body>
+{{/block}}
+</html>

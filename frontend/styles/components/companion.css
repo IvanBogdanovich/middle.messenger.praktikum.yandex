@@ -1,0 +1,85 @@
+.companion {
+    margin-left: -10px;
+    margin-right: -10px;
+
+    display: flex;
+
+    border-top: 1px solid var(--companionBorderColor);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    gap: 10px;
+
+    color: inherit;
+
+    transition: background-color var(--commonDuration);
+}
+
+.companion:hover {
+    background-color: var(--companionHoverColor);
+}
+
+.companion:active,
+.companion:focus {
+    background-color: var(--companionActiveColor);
+}
+
+.companion__img {
+    width: 47px;
+    height: 47px;
+
+    border-radius: 50%;
+}
+
+.companion__name {
+    margin-top: 0;
+    margin-bottom: 4px;
+
+    font-size: var(--medium-xxxs);
+}
+
+.companion__messages {
+    display: flex;
+}
+
+.companion__my {
+    margin-right: 2px;
+
+    font-size: var(--small-s);
+}
+
+.companion__message {
+    color: var(--companionMessageColor);
+}
+
+.companion__time {
+    color: var(--companionTimeColor);
+
+    font-size: var(--small-xxs);
+}
+
+.companion__amountUnread {
+    display: grid;
+    place-content: center;
+
+    width: 20px;
+    height: 20px;
+
+    border-radius: 50%;
+    background-color: var(--companionUnreadMessagesBg);
+    color: var(--companionUnreadMessagesColor);
+
+    font-size: var(--small-xs);
+}
+
+.companion__info {
+    flex-grow: 1
+}
+
+.companion__add {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

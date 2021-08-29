@@ -1,0 +1,25 @@
+html {
+    height: 100%;
+}
+
+body {
+    position: relative;
+    margin: 0;
+
+    min-width: 320px;
+    height: 100vh;
+
+    color: var(--alpha);
+    background-color: var(--epsilon);
+
+    font-family: system-ui, sans-serif;
+    font-weight: 400;
+    font-size: var(--small-s);
+
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}

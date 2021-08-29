@@ -1,0 +1,43 @@
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 30px;
+
+    color: var(--linkColor);
+
+    font-size: var(--small-xs);
+
+    transition: color var(--commonDuration);
+}
+
+.link:hover {
+    color: var(--linkColorHover);
+}
+
+.link:focus,
+.link:active {
+    color: var(--linkColorActive);
+}
+
+.link.link-size--medium-xxxs {
+    font-size: var(--medium-xxxs);
+}
+
+.link.link-position--left {
+    justify-content: flex-start;
+}
+
+.link.link-color--red {
+    color: var(--linkColorRed);
+}
+
+.link.link-color--red:hover {
+    color: var(--linkColorRedHover);
+}
+
+.link.link-color--red:focus,
+.link.link-color--red:active {
+    color: var(--linkColorRedActive);
+}

@@ -1,0 +1,130 @@
+---
+meta:
+    description: Страница профиля
+    title: Profile
+
+styles: ./../../styles/pages/profile.css
+scripts: ./../../scripts/pages/profile.js
+
+name-user:
+    name: Иван
+
+fields:
+    - form-profile-field:
+        label: Почта
+        ID: email
+        name: email
+        value: pochta@yandex.ru
+        type: email
+    - form-profile-field:
+        label: Логин
+        ID: login
+        name: login
+        value: ivanivanov
+        type: text
+    - form-profile-field:
+        label: Имя
+        ID: name
+        name: name
+        value: Иван
+        type: text
+    - form-profile-field:
+        label: Фамилия
+        ID: surname
+        name: surname
+        value: Иванов
+        type: text
+    - form-profile-field:
+        label: Имя в чате
+        ID: displayname
+        name: displayname
+        value: Иван
+        type: text
+    - form-profile-field:
+        label: Телефон
+        ID: phone
+        name: phone
+        value: +7 (909) 967 30 30
+        type: tel
+
+links:
+    - link:
+        url: '/'
+        value: Изменить данные
+        link-mod-size: link-size--medium-xxxs
+        link-mod-position: link-position--left
+    - link:
+        url: '/views/pages/change-password.hbs'
+        value: Изменить пароль
+        link-mod-size: link-size--medium-xxxs
+        link-mod-position: link-position--left
+    - link:
+        url: '/views/pages/chats.hbs'
+        value: Выйти
+        link-mod-color: link-color--red
+        link-mod-size: link-size--medium-xxxs
+        link-mod-position: link-position--left
+---
+
+{{#extend "common"}}
+{{#content "main"}}
+<main class="main">
+    <section class="grid">
+        <h1 hidden>Страница профиля</h1>
+        <div class="row">
+            <div class="col col-xs-1">
+                <aside
+                    class="sidebar js-sidebar-collapse"
+                    id="sidebar"
+                >
+                    <a
+                        href="/views/pages/chats.hbs"
+                        class="sidebar__link"
+                    >
+                        <div class="sidebar__link-wrap">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12H4"></path><path d="M10 18l-6-6 6-6"></path>
+                            </svg>
+                        </div>
+                    </a>
+                </aside>
+            </div>
+
+            <div class="col col-xs-11">
+                <div class="grid">
+                    <div class="row row--justify-center">
+                        <div class="col col-xs-6">
+                            <form class="form-profile">
+                                <legend class="form-profile__legend">Данные профиля</legend>
+
+                                <fieldset>
+                                    {{>file-upload}}
+                                    {{>name-user}}
+
+                                    <div>
+                                        <ul class="form-profile__list">
+                                            {{#each fields}}
+                                                <li class="form-profile__item">
+                                                    {{>form-profile-field}}
+                                                </li>
+                                            {{/each}}
+                                        </ul>
+
+                                        <ul class="form-profile__list">
+                                            {{#each links}}
+                                                <li class="form-profile__item">
+                                                    {{>link}}
+                                                </li>
+                                            {{/each}}
+                                        </ul>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{{/content}}
+{{/extend}}

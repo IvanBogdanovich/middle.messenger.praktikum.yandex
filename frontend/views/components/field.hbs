@@ -1,0 +1,23 @@
+{{#if field}}
+    <label class="field {{field.className}}">
+        <input
+            required
+            name="{{field.name}}"
+            type="{{field.type}}"
+            id="{{field.ID}}"
+            class="field__input"
+        >
+
+        <span
+            class="field__label"
+        >
+            {{field.label}}
+        </span>
+
+        <span
+            class="field__error field__error--is-none"
+        >
+            {{field.error}}
+        </span>
+    </label>
+{{/if}}
