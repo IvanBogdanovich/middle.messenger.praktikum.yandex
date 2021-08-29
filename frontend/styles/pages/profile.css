@@ -1,0 +1,10 @@
+/* глобальные стили для всех страниц */
+@import './common.css';
+
+/* компоненты */
+@import '../components/sidebar.css';
+@import '../components/file-upload.css';
+@import '../components/form-profile.css';
+@import '../components/modal.css';
+@import '../components/name-user.css';
+@import '../components/link.css';

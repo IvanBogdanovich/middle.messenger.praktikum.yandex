@@ -1,0 +1,93 @@
+---
+meta:
+    description: Регистрация в чате
+    title: Registartion
+
+styles: ./../../styles/index.css
+scripts: ./../../scripts/index.js
+
+legend:
+    legendText: Регистрация
+
+button:
+    text: Зарегистрироваться
+    type: submit
+
+fields:
+- field:
+    label: Почта
+    ID: mail
+    type: email
+    error: Неверный email
+- field:
+    label: Логин
+    ID: login
+    type: text
+    error: Неверный логин
+- field:
+    label: Имя
+    ID: first_name
+    type: text
+    error: Неверное имя
+- field:
+    label: Фамилия
+    ID: second_name
+    type: text
+    error: Неверная фамилия
+- field:
+    label: Телефон
+    ID: phone
+    type: phone
+    error: Неверный телефон
+- field:
+    label: Пароль
+    ID: password
+    type: password
+    error: Короткий пароль
+- field:
+    label: Пароль (ещё раз)
+    ID: password
+    type: password
+    error: Пароли не совпадают
+
+link:
+    value: Войти
+    url: '/'
+---
+
+{{#extend "common"}}
+{{#content "main"}}
+<main class="main">
+    <section class="grid">
+        <h1 hidden>Страница Регистрации</h1>
+
+        <div class="row">
+            <div class="col col-xs-12">
+                <div class="form-wrapper">
+                    <form
+                        action="*"
+                        method="POST"
+                        id="registration"
+                        class="form"
+                    >
+                        <fieldset class="form__fieldset">
+                            {{>legend}}
+
+                            <div>
+                                {{#each fields}}
+                                    {{>field}}
+                                {{/each}}
+                            </div>
+                        </fieldset>
+
+                        {{>button}}
+                    </form>
+
+                    {{>link}}
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{{/content}}
+{{/extend}}

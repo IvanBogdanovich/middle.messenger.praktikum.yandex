@@ -1,0 +1,17 @@
+:root {
+    --small-xxxs: 8px;
+    --small-xxs: 9px;
+    --small-xs: 11px;
+    --small-s: 12px;
+
+    --medium-xxxs: 13px;
+    --medium-xxs: 14px;
+    --medium-xs: 15px;
+    --medium-s: 16px;
+
+    --large-xs: 20px;
+    --large-s: 40px;
+
+    --commonBorderRadius: 8px;
+    --formBorderRadius: 12px;
+}

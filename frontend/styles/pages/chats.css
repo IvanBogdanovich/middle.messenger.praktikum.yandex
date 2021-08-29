@@ -1,0 +1,22 @@
+/* глобальные стили для всех страниц */
+@import './common.css';
+
+/* компоненты */
+@import '../components/sidebar.css';
+@import '../components/companion.css';
+@import '../components/search.css';
+@import '../components/link-profile.css';
+
+.chats__wrapper {
+    display: grid;
+    place-content: center;
+
+    height: 100%;
+}
+
+.chats__title {
+    color: var(--chatsTitle);
+
+    font-size: var(--small-s);
+    font-weight: 400;
+}

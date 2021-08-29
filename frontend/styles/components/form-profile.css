@@ -1,0 +1,50 @@
+.form-profile {
+    display: grid;
+    justify-content: center;
+
+    padding-top: 60px;
+}
+
+.form-profile__legend {
+    position: absolute;
+
+    opacity: 0;
+    pointer-events: none
+}
+
+.form-profile__list {
+    width: 510px;
+}
+
+.form-profile__list + .form-profile__list {
+    margin-top: 60px;
+}
+
+.form-profile__item {
+    border-bottom-color: var(--formProfileListItemBorderColor);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+
+.form-profile__item:last-child {
+    border-bottom-color: transparent;
+}
+
+.form-profile__field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    cursor: pointer;
+
+    font-size: var(--medium-xxxs);
+}
+
+.form-profile__input {
+    width: 200px;
+    height: 30px;
+    border: none;
+
+    text-align: right;
+    color: var(--formProfileInputColor);
+}

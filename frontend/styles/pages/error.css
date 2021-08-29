@@ -1,0 +1,27 @@
+/* глобальные стили для всех страниц */
+@import './common.css';
+
+/* компоненты */
+@import '../components/link.css';
+
+.error {
+    margin-bottom: 69px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.error__title {
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    font-size: var(--large-s);
+}
+
+.error__desc {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    font-size: var(--large-xs);
+}

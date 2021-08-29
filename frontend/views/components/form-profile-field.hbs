@@ -1,0 +1,12 @@
+{{#if form-profile-field}}
+    <label class="form-profile__field {{form-profile-field.className}}">
+        <div class="form-profile__label">{{form-profile-field.label}}</div>
+        <input
+            id="{{form-profile-field.ID}}"
+            name="{{form-profile-field.name}}"
+            value="{{form-profile-field.value}}"
+            type="{{form-profile-field.type}}"
+            class="form-profile__input"
+        >
+    </label>
+{{/if}}

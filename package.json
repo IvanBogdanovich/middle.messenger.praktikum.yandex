@@ -1,0 +1,42 @@
+{
+  "name": "super-chat",
+  "version": "0.0.0",
+  "description": "yandex, parcel, hbs, chat project, frontend, lol",
+  "main": "./src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IvanBogdanovich/middle.messenger.praktikum.yandex.git"
+  },
+  "scripts": {
+    "start": "cross-env NODE_ENV=development concurrently \"npm run server\" \"npm run frontend\"",
+    "server": "nodemon server.js",
+    "frontend": "parcel frontend/index.hbs --no-cache",
+    "frontend:build": "parcel build --no-minify frontend/index.hbs"
+  },
+  "author": "Ivan Bogdanovich <ivan.bogdanovich2013@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^6.2.1",
+    "config": "^3.3.6",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.12",
+    "parcel-plugin-handlebars": "^0.4.4",
+    "postcss": "^7.0.32",
+    "autoprefixer": "^9.8.6",
+    "cross-env": "^7.0.3",
+    "cssnano": "^3.0.8",
+    "handlebars": "^4.7.7",
+    "handlebars-layouts": "^3.1.4",
+    "handlebars-wax": "^6.1.0",
+    "parcel-bundler": "^1.12.5",
+    "postcss-import": "^12.0.0",
+    "postcss-modules": "^3.2.2",
+    "postcss-nested": "^4.0.6"
+  },
+  "plugins": {
+    "autoprefixer": {
+      "grid": true
+    },
+    "postcss-nested": {}
+  }
+}
