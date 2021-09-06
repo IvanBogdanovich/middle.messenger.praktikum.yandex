@@ -1,8 +1,8 @@
-export const fileUpload = (function() {
+export function fileUpload() {
     const fileInput  = document.getElementById('file-input')
     const trigger = document.getElementById('file-trigger')
     const result = document.getElementById('file-result')
-
+  
     trigger.addEventListener('click', function( event ) {
         fileInput.focus()
 
@@ -13,4 +13,4 @@ export const fileUpload = (function() {
 
         result.innerHTML = this.value
     })
-})
+}
